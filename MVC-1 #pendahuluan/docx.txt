@@ -1,0 +1,25 @@
+MVC (Model View Controller)
+Apa itu MVC ?
+MVC adalah sebuah pola arsitektur pada perancangan perangkat lunak berorientasi objek
+Tujuan MVC adalah untuk memisahkan antara Tampilan (View), Data (Model), dan Proses(Controller)
+Dimana Controler ini adalah kendali utama untuk mengatur alur prosesnya
+Kenapa Belajar MVC ?
+1. Organisasi (entah kita meyimpan file / folder) & struktur kode yang baik 
+2. untuk memisahkan logic (proses) dan Tampilan
+3. maintenance (Perawatan) kode yang lebih mudah
+4. Implementasi konsep OOP yang sudah dipelajari
+5. Digunakan oleh banyak web application framework
+
+1. Controller
+    Merupakan perantara antara model dan View
+    Menangani pemprosesan pada aplikasi
+    Menangani aksi dari user contoh (ketika tombol diklik, atau menginputkan form)
+2. Model
+    Representasi Pengetahuan
+    Mengelolah Data
+    Logika Bisnis
+3. View
+    Output, apa yang dilihat oleh user
+    Representasi visual dari model
+    Laporan presentasi
+
