@@ -4,7 +4,7 @@ $(function () {
         $('#formModalLabel').html('Tambah Data Mahasiswa');
         $('.modal-footer button[type=submit]').html('Tambah Data');
         $('#nama').val('');
-        $('#nrp').val('');
+        $('#nis').val('');
         $('#email').val('');
         $('#jurusan').val('');
         $('#id').val('');
