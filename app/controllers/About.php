@@ -1,24 +1,25 @@
 <?php
 class About extends Controller{
 
-    public function index($nama = 'Zuhril', $pekerjaan = 'Freelancer', $umur = 17)
+    public function index()
+    {
+        $data['judul'] = 'About';
+
+        $this->view('templates/header', $data);
+        $this->view('about/index');
+        $this->view('templates/footer');
+    }
+
+    public function detail($nama = 'Ahmad Zuhril', $pekerjaan = 'Freelancer', $umur = 17, $email = 'zuhrilfahrizal22@gmail.com')
     {
         $data['nama'] = $nama;
         $data['pekerjaan'] = $pekerjaan;
         $data['umur'] = $umur;
-        $data['judul'] = 'About Me';
+        $data['email'] = $email;
+        $data['judul'] = 'Detail';
 
         $this->view('templates/header', $data);
-        $this->view('about/index', $data);
-        $this->view('templates/footer');
-    }
-
-    public function page()
-    {
-        $data['judul'] = 'My Pages';
-
-        $this->view('templates/header', $data);
-        $this->view('about/page');
+        $this->view('about/detail', $data);
         $this->view('templates/footer');
     }
 }
