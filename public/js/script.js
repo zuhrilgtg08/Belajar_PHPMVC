@@ -14,12 +14,12 @@ $(function () {
 
         $('#formModalLabel').html('Edit Data Mahasiswa');
         $('.modal-footer button[type=submit]').html('Update Data');
-        $('.modal-body form').attr('action', 'http://localhost/PHPMVC/public/mahasiswa/ubah');
+        $('.modal-body form').attr('action', 'http://localhost/php-mvc/public/mahasiswa/ubah');
 
         const id = $(this).data('id');
 
         $.ajax({
-            url: 'http://localhost/PHPMVC/public/mahasiswa/getUbah',
+            url: 'http://localhost/php-mvc/public/mahasiswa/getUbah',
             data: {
                 id: id
             },
